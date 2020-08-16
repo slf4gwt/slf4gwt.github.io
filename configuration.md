@@ -17,12 +17,12 @@ nav_order: 2
 
 ## Important information
 
-attention: {: .label .label-yellow } slf4gwt is in beta state for now, the configuration and the behavior may change
+**attention:** slf4gwt is in beta state for now, the configuration and the behavior may change
 
 
 ## dependency managment
 
-slf4gwt is listed on maven central and so you can simply add the library to your dependency management system as long as maven central is supported. Maven itself supports maven central directly and so you only hve to add these lines to your pom.xml. Please check mven central for other system syntax.
+slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4gwt/slf4gwt) and so you can simply add the library to your dependency management system as long as maven central is supported. Maven itself supports maven central directly and so you only hve to add these lines to your pom.xml. Please check mven central for other system syntax.
 
 ```xml
 <dependency>
