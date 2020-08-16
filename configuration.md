@@ -17,8 +17,8 @@ nav_order: 2
 
 ## Important information
 
-slf4gwt is in beta state for now, the configuration and the behavior may change
-{: .label .label-yellow }
+attention: {: .label .label-yellow } slf4gwt is in beta state for now, the configuration and the behavior may change
+
 
 ## dependency managment
 

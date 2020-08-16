@@ -1,3 +1,9 @@
+---
+layout: default
+title: Introduction
+nav_order: 1
+---
+
 # Introduction
 
 slf4gwt is a slf4j emulation for GWT. With this project it is possible for a Java developer to use the slf4j API on the 
@@ -16,50 +22,3 @@ slf4gwt is inspired by some other open source projects. The most important one i
 [gwt-log](https://github.com/fredsa/gwt-log) the former number one logging framework for GWT. It was used before GWT 2.1 very often. Next we like [slf4j-gwt](https://github.com/FinamTrade/slf4j-gwt) a lot
 but the implementation stopped some years ago, and slf4gwt likes to bridge the gap and provide a state of the art version,
 that can be used with the current GWT implementations.
-
-## Usage
-
-*IMPORTANT*: slf4gwt is in beta state for now, things may change 😎  
-
-First you need to import the jar into your project.
-
-```xml
-<dependency>
-    <groupId>org.slf4gwt</groupId>
-    <artifactId>slf4gwt</artifactId>
-    <version>1.0</version>
-</dependency>
-```
-
-Then add the logging module to your module (*.gwt.xml):
-
-```xml
-<inherits name="org.slf4jgwt.logging.gwt.Logging"/>
-```
-
-You can also set logging level (TRACE, DEBUG, INFO, WARN, ERROR):
-
-```xml
-<set-property name="slf4gwt.log.level" value="INFO"/>
-```
-
-And you can configure the used appenders:
-
-```xml
-<set-property name="slf4gwt.log.handler.console" value="ENABLED" />
-<set-property name="slf4gwt.log.handler.developmentMode" value="ENABLED" />
-<set-property name="slf4gwt.log.handler.hasWidgets" value="DISABLED" />
-<set-property name="slf4gwt.log.handler.system" value="DISABLED" />
-<set-property name="slf4gwt.log.handler.simpleRemote" value="DISABLED" />
-```
-
-### Logging in development and production mode:
-Normally the logging is enabled in development mode and disabled in production mode.
-If you need to get logs on production mode, you have to enable the GWT logging as defined on the
-[GWT logging manual](http://www.gwtproject.org/doc/latest/DevGuideLogging.html#Configuring_GWT_Logging). Or simply add this line to you *.gwt.xml file:
-
-```xml
-<set-property name="gwt.logging.enabled" value="TRUE"/>
-```
-
-Possible values are <code>TRUE</code>, <code>WARNING</code>, <code>SEVERE</code> and <code>FALSE</code> (if you don't need any logging at all).
