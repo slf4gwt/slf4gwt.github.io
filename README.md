@@ -23,6 +23,14 @@ that can be used with the current GWT implementations.
 
 First you need to import the jar into your project.
 
+```xml
+<dependency>
+    <groupId>org.slf4gwt</groupId>
+    <artifactId>slf4gwt</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
 Then add the logging module to your module (*.gwt.xml):
 
 ```xml
