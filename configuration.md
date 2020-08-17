@@ -20,9 +20,9 @@ nav_order: 2
 **attention:** slf4gwt is in beta state for now, the configuration and the behavior may change
 
 
-## dependency managment
+## Dependency managment
 
-slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4gwt/slf4gwt) and so you can simply add the library to your dependency management system as long as maven central is supported. Maven itself supports maven central directly and so you only hve to add these lines to your pom.xml. Please check mven central for other system syntax.
+slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4gwt/slf4gwt) and you can simply add the library to your dependencies as long as maven central is supported by your dependency management system. Maven itself supports maven central directly and so you only have to add these lines to your <code>pom.xml</code>. Please check maven central for other systems syntax.
 
 ```xml
 <dependency>
@@ -32,15 +32,15 @@ slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4g
 </dependency>
 ```
 
-## connect to your application
+## Connect to your application
 
-You can really simple use slf4gwt in your application and you only need to add this <code>inherits</code> line to your <code>gwt.xml</code> file.
+To use slf4gwt in your application, you only have to add this <code>inherits</code> line to your <code>gwt.xml</code> file.
 
 ```xml
 <inherits name="org.slf4jgwt.logging.gwt.Logging"/>
 ```
 
-## set the log level
+## Set the log level
 
 The default log level for slf4gwt is INFO, but you can override it in your <code>gwt.xml</code> file by adding this line. Supported log levels are <code>TRACE</code>, <code>DEBUG</code>, <code>INFO</code>, <code>WARN</code> and <code>ERROR</code>.
 
@@ -48,9 +48,9 @@ The default log level for slf4gwt is INFO, but you can override it in your <code
 <set-property name="slf4gwt.log.level" value="INFO"/>
 ```
 
-## define your appenders/handlers
+## Define your appenders/handlers
 
-As with the originals slf4j, you can choose different appenders to which you pipe the log files to. But in contrast to slf4j, the selected appenders are addressed in parallel and the output can thus be influenced via the following configuration.
+As with the originals slf4j, you can choose different appenders to which you pipe the log messages to. But in contrast to slf4j, the selected appenders are addressed in parallel and the output can thus be influenced via the following configuration.
 
 ```xml
 <set-property name="slf4gwt.log.handler.console" value="ENABLED" />
@@ -62,9 +62,10 @@ As with the originals slf4j, you can choose different appenders to which you pip
 
 The shown example is the default configuration, <code>console</code> and <code>developmentMode</code> logging are enabled by default. Everything else is disabled. It's up to you, to select a suitable appender configuration.
 
-## development and production mode
+## Development and production mode
 
-Normally the logging is enabled in development mode and disabled in production mode.
+Normally the JUL logging for GWT is enabled in development mode and disabled in production mode. Because we rely on this logging implementation, slf4gwt works exact the same way.
+
 If you need to get logs on production mode, you have to enable the GWT logging as defined on the
 [GWT logging manual](http://www.gwtproject.org/doc/latest/DevGuideLogging.html#Configuring_GWT_Logging). Or simply add this line to you *.gwt.xml file:
 
