@@ -44,7 +44,7 @@ public class GwtClientObject {
 
 ## Use parameters
 
-In a plain GWT log message, you have to create a string and log it afterwards. With slf4gwt, you can use parameters in your log message and define a list of objects, that replaces the parameters. This makes the log message more readable in the program code and you don't need to polute the code if log level enabled checks. This is done just before logging and so it is encapsulated on a better place.
+In a plain GWT log message, you have to create a string and log it afterwards. With slf4gwt, you can use parameters in your log message and define a list of objects, that replaces the parameters. This makes the log message more readable in the program code and you don't need to polute the code with "if-log-level-enabled" checks. This is done just before logging and so it is encapsulated on a better place. Nevertheless you can check the log level, when you need to do time-consuming operations for logging.
 
 Some log examples are here:
 

@@ -1,2 +1,8 @@
 title: slf4gwt
 remote_theme: pmarsceill/just-the-docs
+
+aux_links:
+  "slf4gwt on GitHub":
+    - "//github.com/slf4gwt/slf4gwt"
+
+logo: "/assets/images/logo.png"
