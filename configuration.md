@@ -15,11 +15,6 @@ nav_order: 2
 
 ---
 
-## Important information
-
-**attention:** slf4gwt is in beta state for now, the configuration and the behavior may change
-
-
 ## Dependency managment
 
 slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4gwt/slf4gwt) and you can simply add the library to your dependencies as long as maven central is supported by your dependency management system. Maven itself supports maven central directly and so you only have to add these lines to your <code>pom.xml</code>. Please check maven central for other systems syntax.
@@ -28,7 +23,7 @@ slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4g
 <dependency>
     <groupId>org.slf4gwt</groupId>
     <artifactId>slf4gwt</artifactId>
-    <version>1.0</version>
+    <version>1.4</version>
 </dependency>
 ```
 
