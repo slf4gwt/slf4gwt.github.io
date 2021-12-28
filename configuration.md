@@ -32,7 +32,7 @@ slf4gwt is listed on [maven central](https://search.maven.org/artifact/org.slf4g
 To use slf4gwt in your application, you only have to add this <code>inherits</code> line to your <code>gwt.xml</code> file.
 
 ```xml
-<inherits name="org.slf4jgwt.logging.gwt.Logging"/>
+<inherits name="org.slf4gwt.logging.gwt.Logging"/>
 ```
 
 ## Set the log level
